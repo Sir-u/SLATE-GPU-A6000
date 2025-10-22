@@ -183,5 +183,5 @@ def run(opts):
 
 if __name__ == "__main__":
     warnings.filterwarnings('ignore')
-    os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+    os.environ.setdefault("CUDA_VISIBLE_DEVICES", "0")
     run(get_options())
